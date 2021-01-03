@@ -1,0 +1,128 @@
+.FotoInput{
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    background-color: turquoise;
+    border-radius: 50%;
+    margin: auto;
+    cursor: pointer;
+    position: relative;
+}
+
+#fotoInputIMG{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fotoInputCover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    align-items: center;
+}
+
+.fotoInputCoverIMG{
+    width: 39%;
+    margin: auto;
+}
+
+.regolaFoto{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.regolaFotoContainer{
+    width: 500px;
+    height: 500px;
+    background-color: #e6e6e6;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 17px 50px 0px, rgba(0, 0, 0, 0.24) 0px 12px 15px 0px;
+    pointer-events:all;
+    overflow: hidden;
+    animation: 0.4s ease-out 0s 1 openModal;
+}
+
+.regolaFotoTop{
+    width: 100%;
+    height: 49px;
+    background-color: #00BFA5;
+    display: flex;
+    align-items: center;
+}
+
+.modalCloseIcon{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.avatarContainer{
+    width: 100%;
+    height: 361px;
+    background-color: #777777;
+    padding-top: 25.5px;
+    padding-left: 95px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.avatarResize{
+    height: 56px;
+    width: 28px;
+    background-color: salmon;
+    position: absolute;
+    top: 152.5px;
+    right: 7px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.buttonResize{
+    border: none;
+    width: 100%;
+    height: 28px;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    color: rgb(97, 97, 97);
+}
+
+#avatarSave{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #09E85E;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position:absolute;
+    top: -30px;
+    right: 40px;
+}
+
+.regolaFotoFooter
+{
+    height: 60px;
+    width: 100%;
+    position: relative;
+}
+
+@keyframes openModal {
+    0% {
+      height: 0px;
+      width: 0px;
+    }
+    100% {
+        height: 500px;
+        width: 500px;
+    }
+}

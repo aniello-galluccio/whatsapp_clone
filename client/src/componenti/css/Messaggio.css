@@ -1,0 +1,30 @@
+.Messaggio{
+    width: 100%;
+    height: max-content;
+    margin-top: 12px;
+    display: flex;
+    font-size: 14.2px;
+}
+
+.messaggio_orecchia_white
+{
+    width: 8px;
+    height: 13px;
+}
+
+.messaggio_container
+{
+    max-width: 380px;
+    height: max-content;
+    padding: 6px 10px 3px 10px;
+    overflow-wrap: break-word;
+}
+
+.messaggio_dati{
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 11px;
+    display: flex;
+    margin-left: 20px;
+    float: right;
+    margin-top: 9px;
+}

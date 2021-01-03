@@ -1,0 +1,46 @@
+.LoginBTN{
+    overflow: hidden;
+    width: 100%;
+    font-size: 27px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.loginBTNRadius{
+    width: 60px;
+    height:60px;
+    right: 0;
+}
+
+.loginBTNTop
+{
+    border-bottom-right-radius: 50%;
+}
+
+.loginBTNBottom
+{
+    border-top-right-radius: 50%;
+}
+
+.LoginBTNText{
+    width: 100%;
+    margin: 0;
+    padding: 25px;
+    box-sizing: border-box;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    cursor: pointer;
+    position: relative;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}

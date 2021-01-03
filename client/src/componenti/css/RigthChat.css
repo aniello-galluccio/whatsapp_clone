@@ -1,0 +1,203 @@
+.RigthChat
+{
+    width: 100%;
+    height: 100%;
+}
+
+.RigthChatContainer
+{
+    position: relative;
+}
+
+.rigthChatIntro
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.rigthChatIntroDiv
+{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.rigthChatIntroFooterColor
+{
+    width: 100%;
+    height: 6px;
+    background-color:  #4eed6d;
+}
+
+.rigthChatIntroContainer{
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    animation: 0.8s ease-out 0s 1 open;
+}
+
+.rigthChatIntroContainer img{
+    margin: 0 auto 0 auto;
+    display: block;
+}
+
+.rigthChatIntroContainer p
+{
+    text-align: center;
+}
+
+.rigthChatIntroTitle
+{
+    font-size: 28px;
+    color: rgb(82, 82, 82);
+    font-weight: 300;
+    margin-top: 28px;
+}
+
+.rigthChatIntroContainer p:nth-child(3)
+{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.45);
+    margin: 18px 0 0 0;
+}
+
+.rigthChatIntroContainer p:nth-child(4)
+{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.45);
+    margin-top: 1px;
+    padding-bottom: 34px;
+    border-bottom: 1px solid rgb(223, 223, 223);
+}
+
+.rigthChatIntroContainerFooter
+{
+    display: flex;
+    align-items: center;
+    margin-top: 23px;
+    justify-content: center;
+}
+
+.rigthChatIntroContainerText{
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.RigthChatContainer
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.RigthChatContainerTop{
+    width: 100%;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px 0 16px;
+    box-sizing: border-box;
+    background-color: #ededed;
+    justify-content: space-between;
+}
+
+.RigthChatMexContainer{
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    border-top: 1px solid #dbdbdb;
+    background-image: url('https://web.whatsapp.com/img/bg-chat-tile-light_686b98c9fdffef3f63127759e2057750.png');
+    overflow: hidden;
+}
+
+.MexContainer
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(228, 219, 210, 0.93);
+    padding: 0vw 4vw 0vw 4vw;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.RigthChatTypeMex
+{
+    width: 100%;
+    height: 62px;
+    background-color: #ededed;
+    overflow: hidden;
+}
+
+.RigthChatContainerTopUser
+{
+    margin: 0%;
+}
+
+.RigthChatContainerTopLast
+{
+    font-size: 13px;
+    color: #00000099;
+    margin: 0%;
+}
+
+.RigthChatContainerTopInfo
+{
+    margin-left: 15px;
+}
+
+.RigthChatContainerTopLeft
+{
+    display: flex;
+}
+
+#fineMex{
+    width: 100%;
+    height: 20px;
+}
+
+#bottom_chat
+{
+    background-color: white;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    position: absolute;
+    bottom: 79px;
+    right: 11px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 1px 0px, rgba(0, 0, 0, 0.2) 0px 2px 5px 0px;
+    cursor: pointer;
+    overflow: hidden;
+    display: none;
+    transition: all 1s;
+}
+
+@keyframes open {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    #bottom_chat{
+        width: 38px;
+        height: 38px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    #bottom_chat{
+        width: 35px;
+        height: 35px;
+    }
+}

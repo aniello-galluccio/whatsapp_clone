@@ -1,0 +1,73 @@
+.LoginPage
+{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.loginLeft
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(30, 190, 165, 0.94);
+    position: relative;
+}
+
+.loginLeftIMG{
+    width: 31%;
+    height: 100%;
+    background-image: url('https://web.whatsapp.com/img/bg-chat-tile-light_686b98c9fdffef3f63127759e2057750.png');
+}
+
+.loginBtnContainer
+{
+    width: 160px;
+    position: absolute;
+    right: 0;
+    top: 20%;
+}
+
+.loginRigth
+{
+    height: 100%;
+    flex-grow: 1;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.signinBTN{
+    margin-top: -120px;
+}
+
+.loginRigthLogo
+{
+    width: 110px;
+    display: block;
+    margin: auto;
+}
+
+.LoginRigthContainer
+{
+    width: 280px;
+    height: max-content;
+    margin: auto;
+}
+
+.loginRigthSubmit{
+    float: right;
+    background-color: rgb(30, 190, 165, 0.94);
+    margin-top: 27px;
+    color: white;
+    padding: 12px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+.loginRigthSubmit:hover{
+    background-color: rgba(11, 68, 60, 0.94);
+    transition: 0.4s;
+}
