@@ -99,6 +99,8 @@ function App() {
               </div>
             </div>
           </div>
+          
+          <div className="alert_mobile">Dispositivo troppo piccolo per eseguire quest'app</div>
         </div>
 
         <div className="loginRigth">
@@ -116,6 +118,8 @@ function App() {
             <button type="submit" className="loginRigthSubmit">{btnLogin}</button>
           </form>
         </div>
+        
+        <div className="alert_mobile">Dispositivo troppo piccolo per eseguire quest'app</div>
       </div>
     );
   }
