@@ -4,6 +4,15 @@
   display: flex;
 }
 
+.alert_mobile
+{
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: none;
+  position: fixed;
+}
+
 .appContainer
 {
   width: 100vw;
@@ -65,5 +74,12 @@
 @media screen and (max-width: 800px) {
   .whatsappDiv{
     width: 800px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .alert_mobile{
+    display: block;
+    top: 0;
   }
 }
