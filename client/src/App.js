@@ -100,7 +100,7 @@ function App() {
             </div>
           </div>
           
-          <div className="alert_mobile">Dispositivo troppo piccolo per eseguire quest'app</div>
+          <div className="alert_mobile">Dispositivo troppo piccolo per eseguire quest'app, prova ad usare la versione desktop</div>
         </div>
 
         <div className="loginRigth">
@@ -119,7 +119,7 @@ function App() {
           </form>
         </div>
         
-        <div className="alert_mobile">Dispositivo troppo piccolo per eseguire quest'app</div>
+        <div className="alert_mobile">Dispositivo troppo piccolo per eseguire quest'app, prova ad usare la versione desktop</div>
       </div>
     );
   }
