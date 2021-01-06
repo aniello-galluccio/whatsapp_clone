@@ -82,12 +82,23 @@ function FriendChat(props)
 
         if(data.getMonth() === dateOfNow.getMonth() && data.getDate() === dateOfNow.getDate() && data.getFullYear() === dateOfNow.getFullYear())
         {
-            return data.getHours() + ":" + data.getMinutes();
+            return insertZero(data.getHours()) + ":" + insertZero(data.getMinutes());
         }
         else
         {
             return data.getDate() + ' ' + mese[data.getMonth()];
         }
+    }
+
+    //inserisce uno zero se il numero è minore di 10
+    const insertZero = number => {
+        let strNum = String(number);
+        if(number < 10)
+        {
+            strNum = '0' + number;
+        }
+
+        return strNum;
     }
 
     return(
