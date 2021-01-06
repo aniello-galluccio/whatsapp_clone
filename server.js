@@ -185,8 +185,9 @@ io.on('connection', socket => {
     if(myUsername)
     {
       const arrObj = new Array();
-    let numOfChat;
-    let obj;
+      let numOfChat;
+      let obj;
+      let chatWithNoMex = 0;
 
     UtenteDAO.getChatId(myUsername)
     .then(result => {
@@ -209,7 +210,17 @@ io.on('connection', socket => {
 
                 arrObj.push(obj);
 
-                if(arrObj.length === numOfChat)
+                console.log(arrObj);
+
+                if(arrObj.length === numOfChat - chatWithNoMex)
+                {
+                  socket.emit('setchat', arrObj.sort((a, b) => Utils.compare(new Date(a.data), new Date(b.data))));
+                }
+              }
+              else
+              {
+                chatWithNoMex++;
+                if(arrObj.length === numOfChat - chatWithNoMex)
                 {
                   socket.emit('setchat', arrObj.sort((a, b) => Utils.compare(new Date(a.data), new Date(b.data))));
                 }
@@ -218,8 +229,7 @@ io.on('connection', socket => {
           });
         });
       });
-    })
-    .catch(error => console.log(error));
+    });
     }
   });
 
