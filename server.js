@@ -218,7 +218,8 @@ io.on('connection', socket => {
           });
         });
       });
-    });
+    })
+    .catch(error => console.log(error));
     }
   });
 

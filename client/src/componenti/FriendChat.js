@@ -90,7 +90,7 @@ function FriendChat(props)
         }
     }
 
-    //inserisce uno zero se il numero è minore di 10
+    
     const insertZero = number => {
         let strNum = String(number);
         if(number < 10)
