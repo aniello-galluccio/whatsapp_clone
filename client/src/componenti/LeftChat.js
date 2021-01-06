@@ -62,6 +62,8 @@ function LeftChat(props)
         });
 
         socket.on('setchat', chats => {
+            console.log('ciao');
+            console.log('cha', chats);
             setFriendChatArr(chats);
         });
     }, []);
